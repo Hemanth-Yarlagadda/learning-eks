@@ -16,13 +16,7 @@ on:
     - 'terraform-environments/aws/staging/**'
 
 jobs:
-  print-token:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-      pull-requests: write
-      repository-projects: write
-    # needs: pre-pkr
+  # needs: pre-pkr
   ## This generates a matrix of changed directory to run Terraform on
   generate_matrix:
     runs-on: ubuntu-latest
